@@ -23,7 +23,7 @@ def guess_code():
         
         for color in guess:
             if color not in COLORS:
-                print(f"Invalid color: {color}, Try again.")
+                print(f"Invalid color: {color}, Try again!")
                 break
         else:
             break   
@@ -63,7 +63,7 @@ def game():
         correct_pos, incorrect_pos = check_code(guess, code)
         
         if correct_pos == CODE_LENGTH:
-            print(f"You guessed the code in {attempts} tires!")
+            print(f"You guessed the code in {attempts} tries!")
             break
         
         print(f"Attempt: {attempts} | Correct positions: {correct_pos} | Incorrect positions: {incorrect_pos}")
