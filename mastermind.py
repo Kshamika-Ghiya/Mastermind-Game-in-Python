@@ -54,7 +54,7 @@ def check_code(guess, real_code):
 
 def game():
     
-    print(F"Welcome to mastermind! You have {TRIES} to guess the code...")
+    print(F"Welcome to mastermind! You have {TRIES} chances to guess the code...")
     print("The valid colors are", *COLORS)
     
     code = generate_code()
@@ -66,7 +66,7 @@ def game():
             print(f"You guessed the code in {attempts} tires!")
             break
         
-        print(f"Correct positions: {correct_pos} | Incorrect positions: {incorrect_pos}")
+        print(f"Attempt: {attempts} | Correct positions: {correct_pos} | Incorrect positions: {incorrect_pos}")
         
     else:
         print("You ran out of tries. The code was:", *code)
